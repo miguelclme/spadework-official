@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Spadework">
+  <rect width="512" height="512" rx="96" fill="#141B22"/>
+  <g transform="translate(5.7 44) scale(0.43)">
+    <g fill="#E8963A" transform="translate(911 110) rotate(30) scale(7.56)">
+      <rect x="-14" y="0" width="28" height="12" rx="6"/>
+      <rect x="-5" y="10" width="10" height="42"/>
+      <path d="M-19 50h38v20c0 9-9 16-19 20-10-4-19-11-19-20z"/>
+    </g>
+    <g transform="translate(380 590) rotate(-16)">
+      <rect x="-210" y="-210" width="420" height="420" rx="48" fill="#E9EAF0" stroke="#141B22" stroke-width="76" paint-order="stroke"/>
+      <g stroke="#272E3E" stroke-width="56" stroke-linecap="round">
+        <path d="M-140 -110H130"/>
+        <path d="M-80 -10H110"/>
+        <path d="M-80 90H50"/>
+      </g>
+    </g>
+    <path d="M170 908H1017" stroke="#E9EAF0" stroke-width="56" stroke-linecap="round"/>
+  </g>
+</svg>

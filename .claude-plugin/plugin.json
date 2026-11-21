@@ -1,0 +1,12 @@
+{
+  "name": "spadework",
+  "displayName": "Spadework",
+  "version": "0.1.0",
+  "description": "Triage Azure DevOps work items into reviewed plans on a local board, then implement the approved ones with a developer → reviewer → security → tester chain and finally merge them",
+  "author": { "name": "Miguel Mestre" },
+  "homepage": "https://github.com/miguelclme/spadework-official",
+  "repository": "https://github.com/miguelclme/spadework-official",
+  "license": "MIT",
+  "icon": "./assets/logo/plugin_logo/spadework-icon.svg",
+  "keywords": ["azure-devops", "board", "triage", "agents", "workflow"]
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spadework board</title>
+<link rel="stylesheet" href="style.css">
+<script src="page.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header id="top" hidden>
+  <span class="logo">SPADEWORK</span>
+  <div class="seg" id="projects"></div>
+  <span class="spacer"></span>
+  <div class="seg" id="views"><button class="on" type="button" data-view="table">Table</button><button type="button" data-view="timeline">Timeline</button><button type="button" data-view="graph">Graph</button><button type="button" data-view="stats">Stats</button><button type="button" data-view="merge">Merge</button></div>
+  <div class="search"><input id="q" type="search" placeholder="Search title, ID, repo or work item" aria-label="Search"><kbd>/</kbd></div>
+  <button class="iconbtn" id="theme" type="button"></button>
+</header>
+<div id="message" class="message" hidden></div>
+<div id="other" hidden></div>
+<div id="app" hidden>
+  <div class="cards" id="cards"></div>
+  <div class="filters">
+    <select class="sel-small" id="repo" aria-label="Repo"></select>
+    <select class="sel-small" id="type" aria-label="Type"></select>
+    <label class="count"><input type="checkbox" id="closed"> Done and Rejected</label>
+    <span class="spacer"></span>
+    <span class="count" id="count"></span>
+    <button class="iconbtn" id="review" type="button"></button>
+    <button class="iconbtn" id="refresh" type="button">↻ Refresh</button>
+    <button class="iconbtn" id="help" type="button" aria-label="Keys">?</button>
+  </div>
+  <div class="tablewrap" id="tablewrap" tabindex="0" aria-label="Rows: j and k or the arrow keys move, Enter opens the row">
+    <div class="card">
+      <table>
+        <colgroup><col class="c-id"><col><col class="c-feature"><col class="c-type"><col class="c-status"><col class="c-wi"><col class="c-repo"><col class="c-last"><col class="c-act"></colgroup>
+        <thead><tr id="heads"></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <div class="empty" id="empty" hidden>No rows match.</div>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" tabindex="-1">
+  <div class="dhead">
+    <div class="rv" id="rv" hidden></div>
+    <div class="meta"><span class="id" id="rid"></span><span class="st" id="rst"><span></span></span><span id="rmeta"></span></div>
+    <h2 id="rtitle"></h2>
+    <div class="meta" id="rwi"></div>
+    <div id="rfeat"></div>
+    <button class="close" id="close" type="button" aria-label="Close">✕</button>
+  </div>
+  <div class="dact">
+    <button class="btn primary" id="approve" type="button"></button>
+    <button class="btn" id="retriage" type="button">Re-triage <kbd>r</kbd></button>
+    <span class="spacer"></span>
+    <button class="btn" id="more" type="button" aria-label="More actions">⋯</button>
+    <div class="menu" id="menu"></div>
+  </div>
+  <div class="dtabs" id="dtabs">
+    <button class="on" data-p="plan" type="button" id="tab-plan">Plan</button>
+    <button data-p="qa" type="button" id="tab-qa">Questions</button>
+    <button data-p="log" type="button">Implementation log</button>
+    <button data-p="rtl" type="button">Timeline</button>
+  </div>
+  <div class="dbody">
+    <div class="pane on" id="plan"></div>
+    <div class="pane" id="qa"></div>
+    <div class="pane" id="log"></div>
+    <div class="pane" id="rtl"></div>
+  </div>
+</aside>
+<div class="helpbox" id="helpbox" hidden></div>
+<div class="toast" id="toast" role="status"></div>
+</body>
+</html>

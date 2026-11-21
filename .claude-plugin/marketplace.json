@@ -1,0 +1,8 @@
+{
+  "name": "spadework",
+  "owner": { "name": "Miguel Mestre" },
+  "description": "Marketplace for the Spadework plugin: Azure DevOps work items planned on a local board, then implemented by an agent chain.",
+  "plugins": [
+    { "name": "spadework", "source": "./" }
+  ]
+}
